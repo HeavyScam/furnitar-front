@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap%22");
+
+.card {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.card__front {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 80%;
+  padding-left: 32px;
+  padding-bottom: 50px;
+  justify-content: center;
+  background-color: #272435;
+  margin: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  position: relative;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.card__button {
+  background-color: #E704B3;
+  border: #E704B3;
+
+  /* border: 0.5px solid rgb(151, 151, 151); */
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 1%;
+  margin-top: 30px;
+  width: 40%;
+  color: white;
+  /* Aligning button to center
+  justify-content: center;
+  align-items: center;
+  margin-top: 5% !important;
+  margin: auto; */
+}
+
+.card__button:hover {
+  background-color: #E704B3;
+
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+}
+
+.card__input {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  height: 100px;
+  outline: none;
+  color: white;
+  resize: none;
+}
+
+.card__input:hover {
+  border: 3px solid rgb(255, 255, 255, 0.7);
+}
+
+.card__input:focus {
+  border: 3px solid rgb(119, 162, 255);
+}
+
+.card__inputemail {
+  background-color: #2F284F;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  height: 40px;
+  outline: none;
+  color: white;
+}
+
+.card__inputemail:hover {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.card__inputemail:focus {
+  border: 3px solid rgb(119, 162, 255);
+}
