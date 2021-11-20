@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
+import axios from "axios";
 
 const useStyles = makeStyles({
   root: {
@@ -27,8 +28,12 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+export default function MediaCard(props) {
   const classes = useStyles();
+  console.log(props.length);
+  const handleClick = () => {
+    console.log(props.type);
+  };
   return (
     <Card
       sx={{
@@ -44,7 +49,7 @@ export default function MediaCard() {
       <CardMedia
         component="img"
         height="140"
-        image="https://user-images.githubusercontent.com/76126020/142725201-f4c9612c-dfa1-48c8-8f7f-115119d4be97.png"
+        image= {props.url}
         alt="SOFA"
       />
       <CardContent>
@@ -55,12 +60,13 @@ export default function MediaCard() {
             color: "#FFFFFF",
             fontWeight: "bold",
             fontSize: "1.5rem",
-            fontFamily:"Inter",
+            fontFamily: "Inter",
           }}
           align="center"
           component="div"
+          id="category"
         >
-          SOFA
+          {props.type}
         </Typography>
       </CardContent>
       <CardActions>
@@ -74,9 +80,10 @@ export default function MediaCard() {
             borderRadius: 8,
             height: 40,
             padding: "0 20px",
-            fontFamily:"Inter",
+            fontFamily: "Inter",
           }}
-          href="/furniture-select"  
+          type="submit"
+          onClick={handleClick}
         >
           SELECT
         </Button>
