@@ -1,30 +1,30 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import FurnitureSelectCard from "../component/FurnitureSelectCard";
+import FurnitureCard from "../component/FurnitureCard";
 import './SelectType.css'
 
-export default function SelectType() {
+export default function FurnitureSelect() {
   return (
     <>
-    <h1>Select Type</h1>
+    <h1>Furniture Selection</h1>
     <Grid container spacing={0}>
       <Grid item xs={12} md={4}>
-        <FurnitureSelectCard />
+        <FurnitureCard />
       </Grid>
       <Grid item xs={12} md={4}>
-        <FurnitureSelectCard />
+        <FurnitureCard />
       </Grid>
       <Grid item xs={12} md={4}>
-        <FurnitureSelectCard />
+        <FurnitureCard />
       </Grid>
       <Grid item xs={12} md={4}>
-        <FurnitureSelectCard />
+        <FurnitureCard />
       </Grid>
       <Grid item xs={12} md={4}>
-        <FurnitureSelectCard />
+        <FurnitureCard />
       </Grid>
       <Grid item xs={12} md={4}>
-        <FurnitureSelectCard />
+        <FurnitureCard />
       </Grid>
     </Grid>
     </>

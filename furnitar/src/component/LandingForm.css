@@ -8,6 +8,8 @@
 }
 
 .card__front {
+  text-align: center;
+  font-size: large;
   color: white;
   display: flex;
   flex-direction: column;
@@ -25,11 +27,12 @@
 
 
 .card__form {
+  text-align: left !important;
   display: flex;
   flex-direction: column;
   max-width: 60%;
   position: relative;
-  font-size: 20px;
+  font-size: 20px !important;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './LandingForm.css'
+import Button from "@mui/material/Button";
 
 export default function LandingForm() {
     return (
@@ -14,7 +15,23 @@ export default function LandingForm() {
             <input className='card__inputemail mt-1 mb-4' type='number' required/>
             <h3 className='mb-1 mt-8'>Height</h3>
             <input className='card__inputemail mt-1 mb-4' type='number' required/>
-            <button className='card__button '>Search</button>
+            <Button
+          size="small"
+          sx={{ margin: "auto", marginBottom: "20px" }}
+          style={{
+            backgroundColor: "#E704B3",
+            color: "#FFFFFF",
+            border: 0,
+            borderRadius: 8,
+            height: 40,
+            marginTop: "20px",
+            padding: "0 20px",
+            fontFamily:"Inter",
+          }}
+          href="/select-type"  
+        >
+          SEARCH
+        </Button>
           </form>
         </div>
       </div>

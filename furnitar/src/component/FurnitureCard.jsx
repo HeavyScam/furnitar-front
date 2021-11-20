@@ -5,34 +5,14 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles({
-  root: {
-    background: "linear-gradient(45deg, #2F2A4B 100%, #2F2A4B 100%)",
-    // border: 0,
-    // borderRadius: 3,
-    // boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    // color: 'white',
-    // height: 48,
-    // padding: '0 30px',
-  },
-  button: {
-    background: "linear-gradient(45deg, #E704B3 100%, #E704B3 100%)",
-    border: 0,
-    borderRadius: 3,
-    color: "white",
-    height: 48,
-    padding: "0 20px",
-  },
-});
 
 export default function MediaCard() {
-  const classes = useStyles();
   return (
     <Card
       sx={{
         maxWidth: 345,
+        maxHeight: 345,
         margin: "auto",
         marginTop: "20px",
         marginBottom: "50px",
@@ -50,23 +30,38 @@ export default function MediaCard() {
       <CardContent>
         <Typography
           gutterBottom
-          variant="h5"
+          variant="p"
           style={{
             color: "#FFFFFF",
             fontWeight: "bold",
-            fontSize: "1.5rem",
+            fontSize: "1rem",
             fontFamily:"Inter",
+            marginTop: "10px",
           }}
           align="center"
           component="div"
         >
-          SOFA
+          Desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </Typography>
+        <Typography
+          gutterBottom
+          variant="h5"
+          align="center"
+          style={{
+            color: "#E704B3",
+            fontWeight: "medium",
+            fontSize: "1rem",
+            fontFamily:"Inter",
+          }}
+          component="div"
+        >
+        price: $100
         </Typography>
       </CardContent>
       <CardActions>
         <Button
           size="small"
-          sx={{ margin: "auto", marginBottom: "20px" }}
+          sx={{ margin: "auto", marginBottom: "20px", marginTop: "-10px" }}
           style={{
             backgroundColor: "#E704B3",
             color: "#FFFFFF",
@@ -76,7 +71,7 @@ export default function MediaCard() {
             padding: "0 20px",
             fontFamily:"Inter",
           }}
-          href="/furniture-select"  
+          href="/"
         >
           SELECT
         </Button>

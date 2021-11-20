@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Landing from './pages/Landing';
 import SelectType from './pages/SelectType';
 import Navbar from './component/Navbar';
+import FurnitureSelect from './pages/FurnitureSelect';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Landing} />
         <Route exact path='/select-type' component={SelectType} />
+        <Route exact path='/furniture-select' component={FurnitureSelect} />
       </Switch>
     </Router>
     </>
