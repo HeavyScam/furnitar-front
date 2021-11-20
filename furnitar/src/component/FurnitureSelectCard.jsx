@@ -48,7 +48,7 @@ export default function MediaCard(props) {
     >
       <CardMedia
         component="img"
-        height="140"
+        height="200px"
         image= {props.url}
         alt="SOFA"
       />
