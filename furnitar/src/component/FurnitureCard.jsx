@@ -6,13 +6,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-
-export default function MediaCard() {
+export default function MediaCard(props) {
   return (
     <Card
       sx={{
         maxWidth: 345,
-        maxHeight: 345,
+        maxHeight: 600,
         margin: "auto",
         marginTop: "20px",
         marginBottom: "50px",
@@ -23,9 +22,9 @@ export default function MediaCard() {
     >
       <CardMedia
         component="img"
-        height="140"
-        image="https://user-images.githubusercontent.com/76126020/142725201-f4c9612c-dfa1-48c8-8f7f-115119d4be97.png"
-        alt="SOFA"
+        height="300"
+        image={props.data.image_url}
+        alt="Furniture"
       />
       <CardContent>
         <Typography
@@ -35,13 +34,13 @@ export default function MediaCard() {
             color: "#FFFFFF",
             fontWeight: "bold",
             fontSize: "1rem",
-            fontFamily:"Inter",
+            fontFamily: "Inter",
             marginTop: "10px",
           }}
           align="center"
           component="div"
         >
-          Desciption: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          {props.data.product_name.substring(0, 50)}...
         </Typography>
         <Typography
           gutterBottom
@@ -51,11 +50,11 @@ export default function MediaCard() {
             color: "#E704B3",
             fontWeight: "medium",
             fontSize: "1rem",
-            fontFamily:"Inter",
+            fontFamily: "Inter",
           }}
           component="div"
         >
-        price: $100
+          Price: {props.data.price}
         </Typography>
       </CardContent>
       <CardActions>
@@ -69,11 +68,11 @@ export default function MediaCard() {
             borderRadius: 8,
             height: 40,
             padding: "0 20px",
-            fontFamily:"Inter",
+            fontFamily: "Inter",
           }}
-          href="/"
+          href={props.data.product_url}
         >
-          SELECT
+          BUY NOW
         </Button>
       </CardActions>
     </Card>

@@ -7,9 +7,9 @@ import FurnitureSelect from "./pages/FurnitureSelect";
 import { useState } from "react";
 
 function App() {
-  const [length, setLength] = useState("");
-  const [width, setWidth] = useState("");
-  const [height, setHeight] = useState("");
+  // const [length, setLength] = useState(0);
+  // const [width, setWidth] = useState("");
+  // const [height, setHeight] = useState("");
   return (
     <>
       <Navbar />
@@ -20,12 +20,12 @@ function App() {
             exact
             component={() => (
               <Landing
-                length={length}
-                width={width}
-                height={height}
-                setLength={setLength}
-                setWidth={setWidth}
-                setHeight={setHeight}
+                // length={length}
+                // width={width}
+                // height={height}
+                // setLength={setLength}
+                // setWidth={setWidth}
+                // setHeight={setHeight}
               />
             )}
           />
@@ -34,12 +34,12 @@ function App() {
             exact
             component={() => (
               <SelectType
-                length={length}
-                width={width}
-                height={height}
-                setLength={setLength}
-                setWidth={setWidth}
-                setHeight={setHeight}
+                // length={length}
+                // width={width}
+                // height={height}
+                // setLength={setLength}
+                // setWidth={setWidth}
+                // setHeight={setHeight}
               />
             )}
           />
