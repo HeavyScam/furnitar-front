@@ -1,24 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import "./LandingForm.css";
 import Button from "@mui/material/Button";
 import { useHistory } from 'react-router-dom';
 
 
 export default function LandingForm() {
-  const [length, setLength] = useState(0);
-  const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(5000);
   const history = useHistory();
   const HandleSubmit = (e) => {
     e.preventDefault();
     const dlength = document.getElementById("length").value;
     const dwidth = document.getElementById("width").value;
     const dheight = document.getElementById("height").value;
-    // console.log(length, width, height);
 
-    setLength(dlength);
-    setWidth(dwidth);
-    setHeight(dheight);
     history.push({
       pathname: '/select-type',
       state: {

@@ -5,36 +5,11 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { makeStyles } from "@mui/styles";
 import axios from "axios";
 import { useHistory } from "react-router";
-import { useState } from "react";
-
-const useStyles = makeStyles({
-  root: {
-    background: "linear-gradient(45deg, #2F2A4B 100%, #2F2A4B 100%)",
-    // border: 0,
-    // borderRadius: 3,
-    // boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    // color: 'white',
-    // height: 48,
-    // padding: '0 30px',
-  },
-  button: {
-    background: "linear-gradient(45deg, #E704B3 100%, #E704B3 100%)",
-    border: 0,
-    borderRadius: 3,
-    color: "white",
-    height: 48,
-    padding: "0 20px",
-  },
-});
 
 export default function MediaCard(props) {
-  const classes = useStyles();
   const history = useHistory();
-  const [furniture, setFurniture] = useState();
-  console.log(props.length);
   const handleClick = () => {
     let apd;
     if (props.height) {
@@ -52,12 +27,10 @@ export default function MediaCard(props) {
         category: props.type.toLowerCase(),
       };
     }
-    console.log(props.length, props.width, props.height);
     axios
       .post("https://furnitar.herokuapp.com/furnitureData", apd)
       .then(async (res) => {
-        console.log(res);
-        // setFurniture(res);
+        // console.log(res);
         await history.push({
           pathname: "/furniture-select",
           state: {
@@ -66,10 +39,9 @@ export default function MediaCard(props) {
         });
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
       });
 
-    console.log(props.type);
   };
   return (
     <Card
