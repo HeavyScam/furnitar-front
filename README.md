@@ -69,3 +69,9 @@
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/76126020/142781761-5d5a5393-91d5-438f-adc4-87affbdfc5ed.png" alt="drawing" width="100"/>
+	<br><br>
+	With :heart: by <a href="http://github.com/HeavyScam" target="_blank">Heavy Scam</a>
+</p>
