@@ -9,12 +9,21 @@
 
 
 # Introduction
+Have you ever faced problems while furniture shopping online? Faced the pain of manually designing and measuring your furniture placing ideas?  What about the inconvenience of liking a product online just to find out they won't fit or are too small? We present to you *FurnitAR*, your one-stop solution to solve all your problems and hassles related to online furniture shopping!
 
+# About FurintAR
+Using *FurnitAR* users would be able to measure real-world objects or even space by simply pointing their phone’s camera at the given item using Augmented Reality(AR) technology. 
+The measurements which are taken using AR will be used to display the relevant options of furniture which can be purchased from various E-commerce websites.
+In addition, users can also place a 3d model of their furniture in their room to get experience in real time.
+Our application can also be used to get readings in metric units to bring back up when you’re at IKEA later on.
 
 # Requirements
-
+Please check the "package.json" file for the required dependencies.
 
 # Installation Guide to Run Locally
+1. Clone the repository
+2. In the terminal type: yarn install
+3. Once the packages are installed, type: yarn start
 
 # Contributors
 <table>
