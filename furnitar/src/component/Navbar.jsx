@@ -27,7 +27,7 @@ export default function ButtonAppBar() {
             }}
             href="/"
           >
-            FurnitAR
+            SimplyInterior
           </Button>
         </Toolbar>
       </AppBar>
