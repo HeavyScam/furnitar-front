@@ -5,11 +5,36 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { makeStyles } from "@mui/styles";
 import axios from "axios";
 import { useHistory } from "react-router";
+import { useState } from "react";
+
+const useStyles = makeStyles({
+  root: {
+    background: "linear-gradient(45deg, #FFFFFF 100%, #FFFFFF 100%)",
+    // border: 0,
+    // borderRadius: 3,
+    // boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    // color: 'white',
+    // height: 48,
+    // padding: '0 30px',
+  },
+  button: {
+    background: "linear-gradient(45deg, #408CFF 100%, #408CFF 100%)",
+    border: 0,
+    borderRadius: 3,
+    color: "white",
+    height: 48,
+    padding: "0 20px",
+  },
+});
 
 export default function MediaCard(props) {
+  const classes = useStyles();
   const history = useHistory();
+  const [furniture, setFurniture] = useState();
+  console.log(props.length);
   const handleClick = () => {
     let apd;
     if (props.height) {
@@ -27,10 +52,12 @@ export default function MediaCard(props) {
         category: props.type.toLowerCase(),
       };
     }
+    console.log(props.length, props.width, props.height);
     axios
       .post("https://furnitar.herokuapp.com/furnitureData", apd)
       .then(async (res) => {
-        // console.log(res);
+        console.log(res);
+        // setFurniture(res);
         await history.push({
           pathname: "/furniture-select",
           state: {
@@ -39,9 +66,10 @@ export default function MediaCard(props) {
         });
       })
       .catch((err) => {
-        // console.log(err);
+        console.log(err);
       });
 
+    console.log(props.type);
   };
   return (
     <Card
@@ -52,17 +80,17 @@ export default function MediaCard(props) {
         marginBottom: "50px",
       }}
       style={{
-        backgroundColor: "#2F2A4B",
+        backgroundColor: "#FFFFFF",
       }}
     >
-      <CardMedia component="img" height="200px" image={props.url} alt="SOFA" />
+      <CardMedia component="img" height="205px" image={props.url} alt="SOFA" />
       <CardContent>
         <Typography
           gutterBottom
           variant="h5"
           style={{
-            color: "#FFFFFF",
-            fontWeight: "bold",
+            color: "#408CFF",
+            fontWeight: "525",
             fontSize: "1.5rem",
             fontFamily: "Inter",
           }}
@@ -78,7 +106,7 @@ export default function MediaCard(props) {
           size="small"
           sx={{ margin: "auto", marginBottom: "20px" }}
           style={{
-            backgroundColor: "#E704B3",
+            backgroundColor: "#408CFF",
             color: "#FFFFFF",
             border: 0,
             borderRadius: 8,

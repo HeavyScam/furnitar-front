@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap%22");
 
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  font-size: 1.2rem;
+  color: #408CFF;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: #408CFF;
+}
+
 .card {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 3rem;
 }
 
 .card__front {
@@ -14,13 +27,13 @@
   color: white;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
   height: 80%;
   justify-content: center;
-  background-color: #272435;
-  margin: 40px;
+  background-color: #ffffff;
+  margin: 60px;
   border-radius: 10px;
-  backdrop-filter: blur(5px);
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.30));;
 }
 
 
@@ -38,8 +51,8 @@
 }
 
 .card__button {
-  background-color: #E704B3;
-  border: #E704B3;
+  background-color: #408CFF;
+  border: #408CFF;
 
   /* border: 0.5px solid rgb(151, 151, 151); */
   font-size: 20px;
@@ -47,7 +60,7 @@
   font-weight: 400;
   border-radius: 8px;
   padding: 1%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   width: 40%;
   color: white;
   /* Aligning button to center
@@ -58,116 +71,65 @@
 }
 
 .card__button:hover {
-  background-color: #E704B3;
+  background-color: #408CFF;
 
   /* border: 1px solid rgba(255, 255, 255, 0.5); */
 }
 
-.card__input {
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  height: 100px;
-  outline: none;
-  color: white;
-  resize: none;
-}
 
-.card__input:hover {
-  border: 3px solid rgb(255, 255, 255, 0.7);
-}
-
-.card__input:focus {
-  border: 3px solid rgb(119, 162, 255);
-}
 
 .card__inputemail {
-  background-color: #2F284F;
+  background-color: rgba(191, 217, 255, 0.31);;
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   height: 40px;
   padding: 50 32px;
+  margin-top: 24px;
   outline: none;
-  color: white;
+  color: #408CFF;
 }
 
 .card__inputemail:hover {
-  border: 3px solid rgba(255, 255, 255, 0.7);
+  border: 3px solid rgb(255, 255, 255);
 }
 
 .card__inputemail:focus {
   border: 3px solid rgb(119, 162, 255);
 }
 
+.card__inputemail::placeholder {
+  color: #408CFF;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px !important;
+}
+
+.card__inputemail:focus::placeholder {
+  color: transparent;
+}
+
+
 @media screen and (max-width: 768px) {
-  .card {
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 3rem;
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #408CFF;
   }
-  
   .card__front {
-    /* text-align: center; */
-    font-size: medium;
+    text-align: center;
+    font-size: large;
     color: white;
     display: flex;
     flex-direction: column;
-    width: 80% !important;
+    width: 100%;
     height: 80%;
     justify-content: center;
-    background-color: #272435;
-    margin: 40px;
+    background-color: #ffffff;
+    margin: 60px;
     border-radius: 10px;
-    backdrop-filter: blur(5px);
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.30));;
   }
   
-  
-  
-  .card__form {
-    text-align: left !important;
-    display: flex;
-    flex-direction: column;
-    max-width: 60%;
-    position: relative;
-    padding-left: 10%;
-    font-size: 15px !important;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-  }
-  
-  .card__button {
-    background-color: #E704B3;
-    border: #E704B3;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    border-radius: 8px;
-    padding: 1%;
-    color: white;
-  }
-  
-  .card__button:hover {
-    background-color: #E704B3;
-  
-    /* border: 1px solid rgba(255, 255, 255, 0.5); */
-  }
-  
-  .card__inputemail {
-    background-color: #2F284F;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    width: 240px;
-    height: 40px;
-    outline: none;
-    color: white;
-  }
-  
-  .card__inputemail:hover {
-    border: 3px solid rgba(255, 255, 255, 0.7);
-  }
-  
-  .card__inputemail:focus {
-    border: 3px solid rgb(119, 162, 255);
-  }
 }

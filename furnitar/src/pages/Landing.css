@@ -1,8 +1,12 @@
 body {
-  background-color: #121128;
+  background:linear-gradient(#AACCFF 0%, #EBF3FF 97.4%);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
 }
 
 .navbar {
-  background-color: #272435;
-  border-color: #272435;
+  background-color: #408CFF !important;
+  border-color: #408CFF !important;
 }

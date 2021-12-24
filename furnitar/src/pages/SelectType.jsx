@@ -25,7 +25,7 @@ export default function SelectType(props) {
             length={location.state.length}
             width={location.state.width}
             height={location.state.height}
-            type="desk"
+            type="Desk"
             url="https://user-images.githubusercontent.com/76126020/142737199-cada0e93-dbee-4125-ad61-6c76cb856254.png"
           />
         </Grid>
