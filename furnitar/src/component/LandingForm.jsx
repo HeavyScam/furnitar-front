@@ -33,7 +33,8 @@ export default function LandingForm() {
     <>
       <div className="card flex flex-wrap content-center mt-24 mb-24">
         <div className="card__front">
-          <h2>ENTER DIMENSIONS</h2>
+          <h2 
+          style={{marginTop: "10%", marginBottom: "7.5%"}}>ENTER DIMENSIONS</h2>
           <form className="card__form ml-2" onSubmit={HandleSubmit}>
             {/* <h3 className="mb-1 mt-8">dd</h3> */}
             <input
@@ -61,7 +62,7 @@ export default function LandingForm() {
               sx={{ width: "50%", marginBottom: "30px" }}
               variant="contained"
               style={{
-                backgroundColor: "#408CFF",
+                backgroundColor: "#fb5454",
                 color: "#FFFFFF",
                 border: 0,
                 borderRadius: 8,

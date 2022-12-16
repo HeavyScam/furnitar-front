@@ -1,17 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap%22");
 
+.card{
+  background: url("../assets/bg.png");
+  background: visibility 10px;;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  height: 100vh;
+}
+
 h3 {
   font-family: "Inter", sans-serif;
   font-weight: 450;
   font-size: 1.2rem;
-  color: #408CFF;
+  color: #404aff;
 }
 
 h2 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.35rem;
-  color: #408CFF;
+  color: #ffffff;
 }
 
 .card {
@@ -27,13 +37,15 @@ h2 {
   color: white;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 80%;
+  width: 40%;
+  height: 60%;
   justify-content: center;
-  background-color: #ffffff;
-  margin: 60px;
+  border: 1px solid #ffffff4f;
+  /* background-color: #64646439; */
+  background: linear-gradient(75deg, #59595949 50%, #00000071 100%);
+  margin: 5%;
   border-radius: 10px;
-  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.30));;
+  filter: drop-shadow(2px 4px 8px rgba(149, 149, 149, 0.3));;
 }
 
 
@@ -71,7 +83,7 @@ h2 {
 }
 
 .card__button:hover {
-  background-color: #408CFF;
+  background-color: #ff4040;
 
   /* border: 1px solid rgba(255, 255, 255, 0.5); */
 }
@@ -79,14 +91,15 @@ h2 {
 
 
 .card__inputemail {
-  background-color: rgba(191, 217, 255, 0.31);;
+  background-color: rgba(191, 217, 255, 0);;
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   height: 40px;
   padding: 50 32px;
   margin-top: 24px;
   outline: none;
-  color: #408CFF;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .card__inputemail:hover {
@@ -94,11 +107,11 @@ h2 {
 }
 
 .card__inputemail:focus {
-  border: 3px solid rgb(119, 162, 255);
+  border: 2px solid #dedede;
 }
 
 .card__inputemail::placeholder {
-  color: #408CFF;
+  color: #ffffff72;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;

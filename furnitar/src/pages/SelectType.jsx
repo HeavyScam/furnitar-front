@@ -9,6 +9,7 @@ export default function SelectType(props) {
   console.log(location.state.length);
   return (
     <>
+    
       <h1>Select Type</h1>
       <Grid container spacing={0}>
         <Grid item xs={12} md={4}>
@@ -17,7 +18,7 @@ export default function SelectType(props) {
             width={location.state.width}
             height={location.state.height}
             type="Sofa"
-            url="https://user-images.githubusercontent.com/76126020/142725201-f4c9612c-dfa1-48c8-8f7f-115119d4be97.png"
+            url="https://user-images.githubusercontent.com/76126020/207986417-7520d89e-b965-4a8c-b678-88b7bba78aa3.png"
           />
         </Grid>
         <Grid item xs={12} md={4}>
@@ -26,7 +27,7 @@ export default function SelectType(props) {
             width={location.state.width}
             height={location.state.height}
             type="Desk"
-            url="https://user-images.githubusercontent.com/76126020/142737199-cada0e93-dbee-4125-ad61-6c76cb856254.png"
+            url="https://user-images.githubusercontent.com/76126020/207987310-56b6e96c-a439-44ec-89b2-ca69291f80a7.png"
           />
         </Grid>
         <Grid item xs={12} md={4}>
@@ -35,7 +36,7 @@ export default function SelectType(props) {
             width={location.state.width}
             height={location.state.height}
             type= "Drawer"
-            url="https://user-images.githubusercontent.com/76126020/142737301-021025d8-174c-4fd8-8aa0-8f49a06bb3d1.png"
+            url="https://user-images.githubusercontent.com/76126020/207987556-2c6e6977-8b2a-4c5f-ae0c-e7d9a3a79bce.png"
           />
         </Grid>
         <Grid item xs={12} md={4}>
@@ -44,7 +45,7 @@ export default function SelectType(props) {
             width={location.state.width}
             height={location.state.height}
             type="Wardrobe"
-            url="https://user-images.githubusercontent.com/76126020/142737413-49524911-d89f-45bc-8006-5f2a3327b281.png"
+            url="https://user-images.githubusercontent.com/76126020/207987872-93017bd7-f7f5-44aa-9a0b-3bd052dea443.png"
           />
         </Grid>
         <Grid item xs={12} md={4}>
@@ -53,7 +54,7 @@ export default function SelectType(props) {
             width={location.state.width}
             height={location.state.height}
             type="Bed"
-            url="https://user-images.githubusercontent.com/76126020/142737345-cd3b9ea3-18d6-48b2-b4ab-d405ec5ad37e.png"
+            url="https://user-images.githubusercontent.com/76126020/207987996-2aa627b2-5a44-4f7e-8ee3-9357a72e508a.png"
           />
         </Grid>
         <Grid item xs={12} md={4}>
@@ -62,9 +63,10 @@ export default function SelectType(props) {
             width={location.state.width}
             height={location.state.height}
             type="Lamp"
-            url="https://user-images.githubusercontent.com/76126020/142737552-b8a52cea-529a-46eb-8e9b-8a86d1879fe2.png"
+            url="https://user-images.githubusercontent.com/76126020/207988260-e6a536ae-1a98-4e2f-b5c3-51882a651437.png"
           />
         </Grid>
+        
       </Grid>
     </>
   );

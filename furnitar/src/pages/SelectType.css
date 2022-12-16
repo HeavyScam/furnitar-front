@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap%22");
 h1{
+    margin-top: 5%;
     font-size: 1.75rem;
-    color: #408CFF;
+    color: #fff;
     text-align: center;
     font-family: "Inter", sans-serif;
 }
+

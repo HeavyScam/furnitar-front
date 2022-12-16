@@ -5,10 +5,11 @@ import SelectType from "./pages/SelectType";
 import Navbar from "./component/Navbar";
 import FurnitureSelect from "./pages/FurnitureSelect";
 
+
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Router>
         <Switch>
           <Route path="/" exact component={() => <Landing />} />

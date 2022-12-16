@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     // padding: '0 30px',
   },
   button: {
-    background: "linear-gradient(45deg, #408CFF 100%, #408CFF 100%)",
+    background: "linear-gradient(45deg, #ff4040 100%, #ff4040 100%)",
     border: 0,
     borderRadius: 3,
     color: "white",
@@ -54,7 +54,7 @@ export default function MediaCard(props) {
     }
     console.log(props.length, props.width, props.height);
     axios
-      .post("https://furnitar.herokuapp.com/furnitureData", apd)
+      .post("http://localhost:3000/furnitureData", apd)
       .then(async (res) => {
         console.log(res);
         // setFurniture(res);
@@ -80,12 +80,13 @@ export default function MediaCard(props) {
         marginBottom: "50px",
       }}
       style={{
-        backgroundColor: "#FFFFFF",
+        background: "linear-gradient(75deg, #171717 0%, #000 100%)",
+        border : "1px solid #FFFFFF4F",
       }}
     >
-      <CardMedia component="img" height="205px" image={props.url} alt="SOFA" />
+      <CardMedia component="img" image={props.url} alt="SOFA" style={{zIndex:10}}/>
       <CardContent>
-        <Typography
+        {/* <Typography
           gutterBottom
           variant="h5"
           style={{
@@ -93,20 +94,22 @@ export default function MediaCard(props) {
             fontWeight: "525",
             fontSize: "1.5rem",
             fontFamily: "Inter",
+            display: "hidden",
           }}
           align="center"
           component="div"
           id="category"
+          
         >
           {props.type}
-        </Typography>
+        </Typography> */}
       </CardContent>
       <CardActions>
         <Button
           size="small"
           sx={{ margin: "auto", marginBottom: "20px" }}
           style={{
-            backgroundColor: "#408CFF",
+            backgroundColor: "#ff4040",
             color: "#FFFFFF",
             border: 0,
             borderRadius: 8,
