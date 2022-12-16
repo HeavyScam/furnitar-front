@@ -131,18 +131,9 @@ h2 {
     color: #408CFF;
   }
   .card__front {
-    text-align: center;
-    font-size: large;
-    color: white;
-    display: flex;
-    flex-direction: column;
+    
     width: 100%;
-    height: 80%;
-    justify-content: center;
-    background-color: #ffffff;
-    margin: 60px;
-    border-radius: 10px;
-    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.30));;
+    
   }
   
 }
