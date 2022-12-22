@@ -1,8 +1,26 @@
 body {
-  background-color: #121128;
+  background: url("../assets/bg2.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
 }
 
 .navbar {
-  background-color: #272435;
-  border-color: #272435;
+  background-color: #408CFF !important;
+  border-color: #408CFF !important;
 }
+
+.loader {
+  /* background: #091331 !important; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animate background */
+  /* background: linear-gradient(90deg, #ff4040 100%, #ff6767 100%); */
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+}
+

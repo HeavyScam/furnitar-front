@@ -17,7 +17,8 @@ export default function MediaCard(props) {
         marginBottom: "50px",
       }}
       style={{
-        backgroundColor: "#2F2A4B",
+        background:"linear-gradient(75deg, #171717 0%, #000 100%)",
+        border : "1px solid #FFFFFF4F",
       }}
     >
       <CardMedia
@@ -31,7 +32,7 @@ export default function MediaCard(props) {
           gutterBottom
           variant="p"
           style={{
-            color: "#FFFFFF",
+            color: "#408CFF",
             fontWeight: "bold",
             fontSize: "1rem",
             fontFamily: "Inter",
@@ -47,7 +48,7 @@ export default function MediaCard(props) {
           variant="h5"
           align="center"
           style={{
-            color: "#E704B3",
+            color: "#fff",
             fontWeight: "medium",
             fontSize: "1rem",
             fontFamily: "Inter",
@@ -62,7 +63,7 @@ export default function MediaCard(props) {
           size="small"
           sx={{ margin: "auto", marginBottom: "20px", marginTop: "-10px" }}
           style={{
-            backgroundColor: "#E704B3",
+            backgroundColor: "#ff4040",
             color: "#FFFFFF",
             border: 0,
             borderRadius: 8,
