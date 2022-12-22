@@ -47,7 +47,7 @@ export default function SelectType(props) {
             url="https://user-images.githubusercontent.com/76126020/142737413-49524911-d89f-45bc-8006-5f2a3327b281.png"
           />
         </Grid>
-        {/* <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4}>
           <FurnitureSelectCard
             length={location.state.length}
             width={location.state.width}
@@ -64,7 +64,7 @@ export default function SelectType(props) {
             type="Lamp"
             url="https://user-images.githubusercontent.com/76126020/142737552-b8a52cea-529a-46eb-8e9b-8a86d1879fe2.png"
           />
-        </Grid> */}
+        </Grid>
       </Grid>
     </>
   );
