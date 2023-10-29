@@ -54,7 +54,7 @@ export default function MediaCard(props) {
     }
     console.log(props.length, props.width, props.height);
     axios
-      .post("http://localhost:3000/furnitureData", apd)
+      .post("https://furnitar-backend.onrender.com/furnitureData", apd)
       .then(async (res) => {
         console.log(res);
         // setFurniture(res);
