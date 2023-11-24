@@ -76,7 +76,8 @@ export default function LandingForm() {
               // href="/select-type"
               type="submit"
             >
-              SEARCH
+              <p>SEARCH</p>
+              
             </Button>
           </form>
         </div>

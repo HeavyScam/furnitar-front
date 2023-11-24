@@ -5,33 +5,33 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { makeStyles } from "@mui/styles";
+// import { makeStyles } from "@mui/styles";
 import axios from "axios";
 import { useHistory } from "react-router";
 import { useState } from "react";
 
-const useStyles = makeStyles({
-  root: {
-    background: "linear-gradient(45deg, #FFFFFF 100%, #FFFFFF 100%)",
-    // border: 0,
-    // borderRadius: 3,
-    // boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    // color: 'white',
-    // height: 48,
-    // padding: '0 30px',
-  },
-  button: {
-    background: "linear-gradient(45deg, #ff4040 100%, #ff4040 100%)",
-    border: 0,
-    borderRadius: 3,
-    color: "white",
-    height: 48,
-    padding: "0 20px",
-  },
-});
+// const useStyles = makeStyles({
+//   root: {
+//     background: "linear-gradient(45deg, #FFFFFF 100%, #FFFFFF 100%)",
+//     // border: 0,
+//     // borderRadius: 3,
+//     // boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+//     // color: 'white',
+//     // height: 48,
+//     // padding: '0 30px',
+//   },
+//   button: {
+//     background: "linear-gradient(45deg, #ff4040 100%, #ff4040 100%)",
+//     border: 0,
+//     borderRadius: 3,
+//     color: "white",
+//     height: 48,
+//     padding: "0 20px",
+//   },
+// });
 
 export default function MediaCard(props) {
-  const classes = useStyles();
+  // const classes = useStyles();
   const history = useHistory();
   const [furniture, setFurniture] = useState();
   console.log(props.length);
@@ -120,7 +120,7 @@ export default function MediaCard(props) {
           type="submit"
           onClick={handleClick}
         >
-          SELECT
+          <p>SELECT</p>
         </Button>
       </CardActions>
     </Card>

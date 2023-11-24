@@ -41,7 +41,7 @@ export default function MediaCard(props) {
           align="center"
           component="div"
         >
-          {props.data.product_name.substring(0, 50)}...
+          <p>{props.data.product_name.substring(0, 50)}...</p>
         </Typography>
         <Typography
           gutterBottom
@@ -55,7 +55,7 @@ export default function MediaCard(props) {
           }}
           component="div"
         >
-          Price: {props.data.price}
+          <p>Price: {props.data.price}</p>
         </Typography>
       </CardContent>
       <CardActions>
@@ -73,7 +73,8 @@ export default function MediaCard(props) {
           }}
           href={props.data.product_url}
         >
-          BUY NOW
+          <p>BUY NOW</p>
+       
         </Button>
       </CardActions>
     </Card>

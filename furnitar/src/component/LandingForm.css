@@ -24,6 +24,10 @@ h2 {
   color: #ffffff;
 }
 
+p {
+  font-family: "Inter", sans-serif;
+}
+
 .card {
   display: flex;
   align-items: center;

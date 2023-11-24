@@ -11,28 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-::-webkit-scrollbar {
-  width: 0.5rem;
-  background: #121212;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #121212;
-  border-radius: 0.5rem;
-  z-index: -99;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  /* background: #ff6767; */
-  background: linear-gradient(90deg, #ff4040 100%, #ff6767 100%);
-  border-radius: 0.5rem;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #ff4040;
-  visibility: visible;
-}
